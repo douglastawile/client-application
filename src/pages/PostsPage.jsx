@@ -40,7 +40,7 @@ const PostsPage = () => {
               <header className="card-header">{post.author}</header>
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
-                <p className="card-text">{post.content}</p>
+                <p className="card-text">{post.content.substring(0, 100)}...</p>
                 <Link
                   to={`/post/${post._id}`}
                   className="btn btn-primary btn-sm my-2 rounded-2 px-2 py-1"

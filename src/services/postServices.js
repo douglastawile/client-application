@@ -1,6 +1,6 @@
 // import httpClient from "../utilities/httpClient";
 
-const BASE_URL = "http://localhost:1738/api/posts";
+const BASE_URL = "https://server-application-6b9w.onrender.com/api/posts";
 
 export const createPost = async (postData) => {
   try {
