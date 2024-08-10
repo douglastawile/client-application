@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import PostsPage from "./pages/PostsPage";
+import SinglePostPage from "./pages/SinglePostPage";
+import AddNewPost from "./pages/AddNewPost";
 
 const App = () => {
   return (
@@ -48,6 +50,8 @@ const App = () => {
           }
         />
         <Route path="/posts" element={<PostsPage />} />
+        <Route path="/post/:postId" element={<SinglePostPage />} />
+        <Route path="/create" element={<AddNewPost />} />
       </Routes>
     </main>
   );

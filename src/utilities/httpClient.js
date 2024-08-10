@@ -5,6 +5,7 @@ const httpClient = axios.create({
   baseURL: "http://localhost:1738/api", // Adjust to match your Node.js backend
   timeout: 5000, // Request timeout (5 seconds)
   headers: {
+    "Accept": "application/json",
     "Content-Type": "application/json",
     // Add additional headers if required
   },
